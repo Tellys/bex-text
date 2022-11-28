@@ -1,11 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.bex-data.com/wp-content/uploads/2021/04/bex-branco-300.png" width="400"></a></p>
-<p align="center">Ressignificando os dados do mundo para o mundo.</p>
-
-
-## Bex Teste | Laravel
-
-Fala Dev!
-<p>Aqui vai umas dicas para iniciar o teste</p>
+## Simples Sistema de Compras | Laravel
 
 - Conferir a versão do php, o teste esta na Versão "^7.4|^8.0".
 - Fazer o clone do repositório.
@@ -21,3 +14,17 @@ Fala Dev!
          npm run watch
     ```
 Se deu tudo certo até aqui, agora é com você, vai encontrar mais detalhes no projeto, faz rodar e divirta-se 😁.
+
+
+
+Opções para instalação
+```bash
+composer update --no-scripts
+```
+Crie o arquivo .env (pode copiar o exemplo e mudar as vars)
+
+```bash
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
