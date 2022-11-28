@@ -18,9 +18,9 @@ class CreatePedidosComprarsTable extends Migration
             $table->foreignId("pedido_id")->constrained();
             $table->foreignId("produto_id")->constrained();
             $table->integer('quantidade')->default(1);
-            $table->float('price');
-            $table->float('custo');
-            $table->string('produto_name');
+            $table->float('price')->nullable()->default('0');
+            $table->float('custo')->nullable()->default('0');
+            $table->string('produto_name')->nullable();
             $table->timestamps();
         });
     }

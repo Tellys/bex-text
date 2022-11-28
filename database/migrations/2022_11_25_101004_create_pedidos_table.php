@@ -17,8 +17,8 @@ class CreatePedidosTable extends Migration
             $table->id();
             $table->foreignId("user_id")->constrained();
             $table->enum('status', ['aberto','fechado', 'cancelado'] )->nullable()->default('aberto');
-            $table->float('price');
-            $table->float('custo');
+            $table->float('price')->nullable()->default('0');
+            $table->float('custo')->nullable()->default('0');
             $table->timestamps();
         });
     }
